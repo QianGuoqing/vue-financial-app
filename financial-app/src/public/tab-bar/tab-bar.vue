@@ -54,13 +54,13 @@
 <style lang="stylus" scoped>
 @import '../../common/stylus/variables.styl'
 .tab-wrapper
-  box-sizing border-box
   width 100%
   position fixed
   left 0
   bottom 0
   border-top 1px solid #ccc
-  padding-top 2px
+  z-index 999
+  background #fff
   .tab-list
     width 100%
     height 55px
@@ -68,12 +68,13 @@
     justify-content space-around
     text-align center
     font-size 11px
+    padding-top 5px
     .item
       display flex
       flex-direction column
       .icon
-        width 33px
-        height 33px
+        width 30px
+        height 30px
       .name
         color #333
         padding-top 5px

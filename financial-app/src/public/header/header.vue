@@ -1,17 +1,19 @@
 <template>
-  <div class="header">
-    <div class="login-register">
-      <strong>登陆/注册</strong>
+  <header>
+    <div class="header">
+      <div class="login-register">
+        <strong>登陆/注册</strong>
+      </div>
+      <div class="logo">
+      </div>
+      <btn class="app-download-button">APP下载</btn>
     </div>
-    <div class="logo">
-    </div>
-    <btn class="app-download-button">APP下载</btn>
-  </div>
+  </header>
 </template>
 
 <script>
   import Btn from '../../core-component/btn/btn'
-
+  
   export default {
     components: {
       Btn
@@ -20,12 +22,21 @@
 </script>
 
 <style lang="stylus" scoped>
+header
+  width 100%
+  height 60px
+  position fixed
+  left 0
+  top 0
+  z-index 999
   .header
     display flex
     height 50px
     line-height 50px
     padding-left 20px
     justify-content space-between
+    z-index 1000
+    background #fff
     .logo-register
       font-size 28px
       height 30px
@@ -38,5 +49,5 @@
     .app-download-button
       height 28px
       line-height 28px
-      margin 7px 20px 0 0
+      margin 12px 20px 0 0
 </style>

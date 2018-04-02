@@ -1,12 +1,10 @@
 <template>
   <section>
-    <swiper>
+    <swiper :options="options">
       <swiper-slide v-for="(item, index) in sliderItems" :key="index">
-        <!--待定-->
+        <img :src="item.src" alt="">
       </swiper-slide>
-      <div
-        slot="pagination"
-        class="swiper-pagination"></div>
+      <div class="swiper-pagination" slot="pagination"></div>
     </swiper>
   </section>
 </template>
@@ -39,6 +37,9 @@
   }
 </script>
 
-<style scoped>
-  @import "~swiper/dist/css/swiper.css";
+<style>
+   @import "swiper/dist/css/swiper.css";
+   img {
+     width: 100%;
+   }
 </style>

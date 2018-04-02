@@ -1,9 +1,7 @@
 <template>
   <div id="app">
-    <header>
-      <app-header></app-header>
-    </header>
-    <router-view></router-view>
+    <app-header></app-header>
+    <router-view class="common"></router-view>
     <tab-bar></tab-bar>
   </div>
 </template>
@@ -21,5 +19,11 @@
 </script>
 
 <style>
+* {
+  box-sizing: border-box;
+}
 
+.common {
+  margin-top: 60px;
+}
 </style>
