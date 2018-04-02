@@ -1,15 +1,21 @@
 <template>
   <div id="app">
-    <app-header></app-header>
+    <header>
+      <app-header></app-header>
+    </header>
+    <router-view></router-view>
+    <tab-bar></tab-bar>
   </div>
 </template>
 
 <script>
-  import Header from './public/header/header'
+  import Header from './public/header/header.vue'
+  import TabBar from './public/tab-bar/tab-bar.vue'
   export default {
     name: 'App',
     components: {
-      'app-header': Header
+      'app-header': Header,
+      TabBar
     }
   }
 </script>
