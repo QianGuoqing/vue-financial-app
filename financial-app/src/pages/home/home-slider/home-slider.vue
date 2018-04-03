@@ -41,7 +41,8 @@
     justify-content space-around
     text-align center
     width 100%
-    margin-top 20px
+    padding 20px 0
+    background-color #fff
     .entries-item
       .image
         width 52px

@@ -1,6 +1,6 @@
 <template>
   <div class="panel">
-    <h4>{{ title }}</h4>
+    <h4 class="title"> - {{ title }} - </h4>
     <slot></slot>
   </div>
 </template>
@@ -20,4 +20,6 @@
   @import "../../common/stylus/mixin.styl"
   .panel
     panel-default()
+    .title
+      text-align center
 </style>
