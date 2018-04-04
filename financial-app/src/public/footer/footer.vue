@@ -1,6 +1,6 @@
 <template>
   <footer class="footer-wrapper">
-    <img src="https://img12.360buyimg.com/jrpmobile/jfs/t2842/350/3035567089/14791/5f6ff93d/577cf395N31e76288.png?width=1125&height=252" alt="">
+    <img :src="imageUrl" alt="">
     <div class="device">
       <div class="device-item" v-for="device in devices" :key="device.title">
         <img class="device-image" :src="device.imgUrl" alt="">
@@ -17,6 +17,12 @@
 
 <script>
   export default {
+    props: {
+      imageUrl: {
+        type: String,
+        default: ''
+      },
+    },
     data() {
       return {
         footerLists: [
