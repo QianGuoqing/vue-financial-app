@@ -28,6 +28,7 @@ header
   position fixed
   left 0
   top 0
+  background-color #f9f9f9
   z-index 999
   .header
     display flex

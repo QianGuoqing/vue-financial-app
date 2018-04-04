@@ -6,6 +6,8 @@
     <selected></selected>
     <recommend></recommend>
     <service></service>
+    <app-footer></app-footer>
+    <BackTop class="to-top"></BackTop>
   </div>
 </template>
 
@@ -16,6 +18,7 @@
   import Selected from './selected/selected.vue'
   import Recommend from './recommend/recommend.vue'
   import Service from './service/service.vue'
+  import AppFooter from '../../public/footer/footer.vue'
   export default {
     components: {
       HomeSlider,
@@ -23,7 +26,8 @@
       Borrow,
       Selected,
       Recommend,
-      Service
+      Service,
+      AppFooter
     }
   }
 </script>
@@ -33,4 +37,7 @@
   background-color #f5f5f5
   margin-bottom 55px
   // height 100%
+  .to-top
+    border-radius 50%
+    margin-bottom 50px
 </style>

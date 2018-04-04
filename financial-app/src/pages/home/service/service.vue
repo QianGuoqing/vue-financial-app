@@ -64,6 +64,8 @@
         height 52px
       .title
         margin-top -8px
+        color #666
+        font-weight normal
       .desc
         margin-top -8px
         color #FF801A
