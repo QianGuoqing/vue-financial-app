@@ -54,7 +54,7 @@
             link: '/group',
             text: '众筹',
             icon: 'http://img12.360buyimg.com/jrpmobile/jfs/t3604/98/635506544/2317/443d3a51/580f240aNbee3dcc4.png?width=66&height=66',
-            activeIcon: 'http://img12.360buyimg.com/jrpmobile/jfs/t3604/98/635506544/2317/443d3a51/580f240aNbee3dcc4.png?width=66&height=66'
+            activeIcon: 'https://img12.360buyimg.com/jrpmobile/jfs/t4114/213/1539606521/1876/9f736561/587d8deaNf7f37693.png?width=66&height=66'
           },
           {
             id: 5,

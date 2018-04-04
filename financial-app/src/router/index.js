@@ -36,6 +36,10 @@ export default new Router({
       path: '/mine',
       name: 'Mine',
       component: Mine
+    },
+    {
+      path: '*',
+      redirect: '/home'
     }
   ]
 })
