@@ -4,7 +4,7 @@
       <swiper-slide v-for="(item, index) in sliderItems" :key="index">
         <img :src="item.src" alt="">
       </swiper-slide>
-      <div class="swiper-pagination" slot="pagination"></div>
+      <div v-if="showDots" class="swiper-pagination" slot="pagination"></div>
     </swiper>
   </section>
 </template>
@@ -32,6 +32,10 @@
       sliderItems: {
         type: Array,
         default: []
+      },
+      showDots: {
+        type: Boolean,
+        default: true
       }
     },
   }

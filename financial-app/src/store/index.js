@@ -14,6 +14,9 @@ const store = new Vuex.Store({
     }, {
       href: "home",
       src: "//img12.360buyimg.com/jrpmobile/jfs/t13465/324/2563794460/43029/3ffca963/5a421f83Ne8089231.jpg?width=750&height=320",
+    }, {
+      href: "home",
+      src: 'https://img12.360buyimg.com/jrpmobile/jfs/t17539/38/1283565569/46142/65403e33/5ac21f91Nd4cab9f5.png?width=750&height=320'
     }],
     homeEntries: [{
       href: "download",
