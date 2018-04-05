@@ -20,7 +20,6 @@
   export default {
     methods: {
       getIndex(index) {
-        console.log(index)
         this.currentIndex = index
       }
     },

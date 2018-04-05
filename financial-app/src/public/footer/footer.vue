@@ -1,6 +1,6 @@
 <template>
   <footer class="footer-wrapper">
-    <img :src="imageUrl" alt="">
+    <img class="image" :src="imageUrl" alt="">
     <div class="device">
       <div class="device-item" v-for="device in devices" :key="device.title">
         <img class="device-image" :src="device.imgUrl" alt="">
@@ -20,7 +20,7 @@
     props: {
       imageUrl: {
         type: String,
-        default: ''
+        default: 'https://img12.360buyimg.com/jrpmobile/jfs/t2842/350/3035567089/14791/5f6ff93d/577cf395N31e76288.png?width=1125&height=252'
       },
     },
     data() {
@@ -52,6 +52,8 @@
 <style lang="stylus" scoped>
 .footer-wrapper
   background-color #f5f5f5
+  .image
+    width 100%
   .device
     display flex
     justify-content space-around
