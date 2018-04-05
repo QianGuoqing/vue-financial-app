@@ -18,6 +18,10 @@
       color: {
         type: String,
         default: '#f04752'
+      },
+      bgColor: {
+        type: String,
+        default: '#fff'
       }
     },
     created() {
@@ -25,7 +29,8 @@
         const badget = this.$refs.badget
         badget.style.color = this.color
         badget.style.border = `1px solid ${this.color}`
-        badget.style.fontSize = `${this.size}px`
+        badget.style.fontSize = `${this.size}px`,
+        badget.style.backgroundColor = `${this.bgColor}`
       })
     }
   }
