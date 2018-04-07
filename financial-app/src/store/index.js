@@ -5,6 +5,10 @@ Vue.use(Vuex)
 
 const store = new Vuex.Store({
   state: {
+    user: {
+      account: 'admin',
+      password: 'admin'
+    },
     homeSliderItems: [{
       href: "home",
       src: "//img12.360buyimg.com/jrpmobile/jfs/t13744/11/2508939408/43213/58bfe502/5a421ff3N52d0a474.jpg?width=750&height=320",
